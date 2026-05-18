@@ -11,6 +11,34 @@
   box-sizing: border-box;
 }
 
+.variant-nav {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0.75rem 1rem 0;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.nav-link-variant {
+  color: #3d7ee6;
+  text-decoration: none;
+}
+
+.nav-link-variant:hover {
+  color: #1a4fa8;
+  text-decoration: underline;
+}
+
+.nav-sep {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.nav-current {
+  color: var(--text-dark);
+}
+
 body {
   margin: 0;
   min-height: 100vh;

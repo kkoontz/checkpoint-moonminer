@@ -2,9 +2,18 @@
 
 Moon Miner — click the cheese moon, buy upgrades, and automate your lunar mining empire.
 
+## Game variants
+
+| Page | Theme |
+|------|--------|
+| [`index.html`](index.html) | **Moon Miner** — cheese moon, sunny HUD, Knife / Mousetronaut upgrades |
+| [`void-harvest.html`](void-harvest.html) | **Void Harvest** — obsidian moon, cyber palette, Plasma Pick / Wisp Drone upgrades |
+
+Same mechanics on both pages; separate saves (each page has its own in-memory state).
+
 ## Run locally
 
-Open `index.html` in a browser, or serve the folder:
+Open `index.html` or `void-harvest.html` in a browser, or serve the folder:
 
 ```bash
 npx --yes serve .

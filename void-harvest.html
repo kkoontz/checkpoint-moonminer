@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moon Miner</title>
+    <title>Void Harvest</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,48 +13,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="void-harvest.css" />
   </head>
   <body>
     <nav class="variant-nav" aria-label="Game variants">
-      <span class="nav-current">Moon Miner</span>
+      <a href="index.html" class="nav-link-variant">Moon Miner (classic)</a>
       <span class="nav-sep" aria-hidden="true">|</span>
-      <a href="void-harvest.html" class="nav-link-variant">Void Harvest (alt theme)</a>
+      <span class="nav-current">Void Harvest</span>
     </nav>
 
-    <main class="game">
-      <h1 class="game-title">MOON MINER</h1>
+    <main class="game game--void">
+      <p class="game-tagline">Shatter the obsidian moon. Hoard void shards. Automate the abyss.</p>
+      <h1 class="game-title">VOID HARVEST</h1>
 
       <section class="play-area">
         <div id="float-container" aria-hidden="true"></div>
+        <div class="moon-glow" aria-hidden="true"></div>
         <img
           id="moon"
-          src="https://codeworks.blob.core.windows.net/public/assets/img/projects/moon-miner.png?v=1"
-          alt="Cheese moon — click to mine"
-          width="320"
-          height="320"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/480px-FullMoon2010.jpg"
+          alt="Obsidian moon — click to harvest void shards"
+          width="300"
+          height="300"
         />
       </section>
 
-      <section class="hud" aria-label="Game status">
+      <section class="hud" aria-label="Harvest status">
         <div class="hud-card hud-click">
-          <span class="hud-icon" aria-hidden="true">&#9757;</span>
+          <span class="hud-icon" aria-hidden="true">⚡</span>
           <span id="click-rate" class="hud-value">+1</span>
         </div>
 
         <div class="hud-card hud-balance">
-          <span class="cheese-icon" aria-hidden="true"></span>
-          <span id="cheese-display" class="hud-balance-value">0</span>
+          <span class="resource-icon" aria-hidden="true"></span>
+          <span id="resource-display" class="hud-balance-value">0</span>
+          <span class="resource-label">shards</span>
         </div>
 
         <div class="hud-card hud-auto">
           <div class="auto-progress-wrap">
             <div id="auto-progress" class="auto-progress-bar"></div>
           </div>
-          <span class="hud-icon" aria-hidden="true">&#9201;</span>
+          <span class="hud-icon" aria-hidden="true">◎</span>
           <span id="auto-rate" class="hud-value">+0</span>
         </div>
       </section>
@@ -62,27 +65,25 @@
       <section class="upgrade-panel container-fluid">
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="panel-heading">CLICK UPGRADES</h2>
+            <h2 class="panel-heading">MANUAL RIGS</h2>
             <div id="click-upgrade-buttons" class="upgrade-buttons"></div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="panel-heading">AUTOMATIC UPGRADES</h2>
+            <h2 class="panel-heading">DRIFT COLLECTORS</h2>
             <div id="auto-upgrade-buttons" class="upgrade-buttons"></div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="panel-heading">CLICK STATS</h2>
+            <h2 class="panel-heading">RIG MANIFEST</h2>
             <div id="click-stats" class="stats-list"></div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <h2 class="panel-heading">AUTOMATIC STATS</h2>
+            <h2 class="panel-heading">FLEET TELEMETRY</h2>
             <div id="auto-stats" class="stats-list"></div>
           </div>
         </div>
       </section>
     </main>
 
-    <script src="app.js"></script>
+    <script src="void-harvest.js"></script>
   </body>
 </html>
-
-
