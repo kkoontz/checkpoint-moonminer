@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon Miner</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game">
+      <h1 class="game-title">MOON MINER</h1>
+
+      <section class="play-area">
+        <div id="float-container" aria-hidden="true"></div>
+        <img
+          id="moon"
+          src="https://codeworks.blob.core.windows.net/public/assets/img/projects/moon-miner.png?v=1"
+          alt="Cheese moon — click to mine"
+          width="320"
+          height="320"
+        />
+      </section>
+
+      <section class="hud" aria-label="Game status">
+        <div class="hud-card hud-click">
+          <span class="hud-icon" aria-hidden="true">&#9757;</span>
+          <span id="click-rate" class="hud-value">+1</span>
+        </div>
+
+        <div class="hud-card hud-balance">
+          <span class="cheese-icon" aria-hidden="true"></span>
+          <span id="cheese-display" class="hud-balance-value">0</span>
+        </div>
+
+        <div class="hud-card hud-auto">
+          <div class="auto-progress-wrap">
+            <div id="auto-progress" class="auto-progress-bar"></div>
+          </div>
+          <span class="hud-icon" aria-hidden="true">&#9201;</span>
+          <span id="auto-rate" class="hud-value">+0</span>
+        </div>
+      </section>
+
+      <section class="upgrade-panel container-fluid">
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h2 class="panel-heading">CLICK UPGRADES</h2>
+            <div id="click-upgrade-buttons" class="upgrade-buttons"></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h2 class="panel-heading">AUTOMATIC UPGRADES</h2>
+            <div id="auto-upgrade-buttons" class="upgrade-buttons"></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h2 class="panel-heading">CLICK STATS</h2>
+            <div id="click-stats" class="stats-list"></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h2 class="panel-heading">AUTOMATIC STATS</h2>
+            <div id="auto-stats" class="stats-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
