@@ -1,6 +1,6 @@
 # Moon Miner
 
-CodeWorks Unit 02 checkpoint — click the cheese moon, buy upgrades, and automate your lunar mining empire.
+Moon Miner — click the cheese moon, buy upgrades, and automate your lunar mining empire.
 
 ## Run locally
 
